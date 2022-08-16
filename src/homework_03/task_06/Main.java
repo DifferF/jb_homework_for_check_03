@@ -24,6 +24,17 @@ public class Main {
         printingCyan.print(inputText);
         Printer printingGrey = new Grey();
         printingGrey.print(inputText);
+
+        // UpCast
+        Printer printingCyan2 = printingCyan;
+        printingCyan2.print(inputText);
+        Printer printingPurple2 = printingPurple;
+        printingPurple2.print(inputText);
+        // DownCast
+        Yellow printingCyan3 = (Yellow) printingCyan;
+        printingCyan3.print(inputText);
+        Yellow printingPurple3 = (Yellow) printingPurple;
+        printingPurple3.print(inputText);
     }
 }
 
